@@ -97,12 +97,47 @@ body {
 @media (max-width: 768px) {
     body {
         font-size: 14px; /* Smaller font size for better readability */
+        transform: rotate(180deg); /* Flip the background vertically for mobile */
     }
 
     .card {
         width: 95%; /* Slightly larger width to take up more space */
         margin: 20px auto; /* Less margin on mobile */
         padding: 20px; /* Reduced padding for smaller screen */
+    }
+
+    .search {
+        flex-direction: column; /* Stack search input and button */
+        align-items: stretch; /* Make input and button take full width */
+        justify-content: center;
+    }
+
+    .search input {
+        font-size: 16px; /* Adjusted font size */
+        height: 40px; /* Reduced height */
+    }
+
+    .search button {
+        width: 45px; /* Reduced button size */
+        height: 45px;
+    }
+
+    .weather h1 {
+        font-size: 60px; /* Smaller main temperature */
+    }
+
+    .weather h2 {
+        font-size: 30px; /* Smaller secondary info */
+    }
+
+    .details {
+        flex-direction: column; /* Stack weather details vertically */
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .col {
+        margin-bottom: 10px; /* Add space between the details */
     }
 }
 .error{
