@@ -94,6 +94,17 @@ body {
 .weather{
     display: none;
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for better readability */
+    }
+
+    .card {
+        width: 95%; /* Slightly larger width to take up more space */
+        margin: 20px auto; /* Less margin on mobile */
+        padding: 20px; /* Reduced padding for smaller screen */
+    }
+}
 .error{
     text-align: left;
     width: 100%;
